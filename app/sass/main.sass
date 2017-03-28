@@ -3,6 +3,155 @@
 @import "libs"
 @import "base"
 
+.wrapper
+	margin: 0 auto
+	width: 124.6rem
+
+.top-bar
+	box-sizing: border-box
+	position: relative
+	padding: 1rem 0
+	height: 4rem
+	line-height: 2rem
+	font-size: 1.6rem
+	color: #fe9389
+	background: #cb1717
+	&__city
+		float: left
+		&__select
+			width: auto
+			.jq-selectbox__select
+				background: none
+				border: 0 !important
+				padding: 0
+				line-height: 2rem
+				box-shadow: none
+				text-shadow: none
+				color: inherit
+				&-text
+					background: none
+					border: 
+					&::after
+						content: ''
+						display: inline-block
+						vertical-align: middle
+						margin: 0 0 0 0.5rem
+						width: 0
+						height: 0
+						border: 0.4rem solid transparent
+						border-top-color: #fe9389
+			.jq-selectbox__trigger
+				display: none
+	&__contact
+		float: right
+	.menu
+		margin: 0 21.7rem
+		&__list
+			margin: 0
+			padding: 0
+			list-style: none
+		&__item
+			display: inline-block
+			vertical-align: middle
+			margin: 0 3.5rem 0 0
+			&__link
+				color: inherit
+				transition: all .2s ease-in
+				&:hover
+					color: #fff
+
+.header
+	position: relative
+	box-sizing: border-box
+	padding: 2rem 0
+	height: 8rem
+	line-height: 4rem
+	font-size: 2rem
+	color: #fff
+	background: $color
+	&__logo
+		float: left
+		width: 16.8rem
+		height: 4rem
+		background: url(../img/logo.png) 0 50% no-repeat
+		background-size: contain
+		text-indent: -5000px
+	&__auth
+		float: right
+		margin: 0 0 0 3rem
+	&__search
+		float: right
+		padding: 0.5rem 0
+		&__input
+			float: left
+			display: block
+			box-sizing: border-box
+			margin: 0 1rem 0 0
+			width: 0rem
+			height: 3rem
+			line-height: 3rem
+			font-size: 1.6rem
+			color: $color
+			background: transparent
+			border-radius: 1.5rem
+			transition: all .1s ease-in
+			border: 0
+		&__submit
+			float: right
+			display: block
+			width: 3rem
+			height: 3rem
+			color: transparent
+			background: url(../img/ico_search.png) center no-repeat
+			background-size: contain
+			border: 0
+			overflow: hidden
+		&_active &__input,
+		&:hover &__input
+			padding: 0 2rem
+			width: 20rem
+			background: #fff
+	.main-menu
+		margin: 0 21.7rem
+		&__list
+			margin: 0
+			padding: 0
+			list-style: none
+		&__item
+			display: inline-block
+			vertical-align: middle
+			margin: 0 5rem 0 0
+			&__link
+				color: inherit
+				transition: all .2s ease-in
+				&:hover
+					opacity: 0.8
+
+/**/
+
+.main
+	position: relative
+	background: #ecdfd3
+	&__item
+		position: relative
+		width: 100%
+	&__link
+		display: block
+		color: inherit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @import "media"
